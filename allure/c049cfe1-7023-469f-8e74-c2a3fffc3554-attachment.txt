@@ -1,0 +1,1 @@
+[32mINFO    [0m test_issue:test_e2e.py:76 Issuing GRP ticket from Vanaz  to Nal stop of Qty 7 by Cardamounting RS

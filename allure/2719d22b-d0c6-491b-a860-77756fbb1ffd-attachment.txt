@@ -1,0 +1,1 @@
+[32mINFO    [0m test_cancel:test_e2e.py:92 Issuing SJT ticket from Vanaz  to Anand Nagar of Qty 5 by Cashamounting RS

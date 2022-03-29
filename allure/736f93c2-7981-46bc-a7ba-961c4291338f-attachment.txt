@@ -1,0 +1,1 @@
+[32mINFO    [0m test_cancel:test_e2e.py:92 Issuing GRP ticket from Vanaz  to Nal stop of Qty 6 by UPIamounting RS

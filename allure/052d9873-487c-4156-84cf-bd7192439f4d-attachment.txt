@@ -1,0 +1,1 @@
+[32mINFO    [0m test_stock:test_e2e.py:56 To check stock management

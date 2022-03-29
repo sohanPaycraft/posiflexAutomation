@@ -1,0 +1,1 @@
+[32mINFO    [0m test_cancel:test_e2e.py:92 Issuing RJT ticket from Vanaz  to Garvare of Qty 1 by Cardamounting RS

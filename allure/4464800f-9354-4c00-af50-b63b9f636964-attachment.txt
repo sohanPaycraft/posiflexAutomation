@@ -1,0 +1,14 @@
+Message: An element could not be located on the page using the given search parameters.
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/home/sohansagar/.nvm/versions/node/v14.17.3/lib/node_modules/appium/node_modules/appium-android-driver/lib/commands/find.js:75:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/home/sohansagar/.nvm/versions/node/v14.17.3/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)
+    at AndroidUiautomator2Driver.findElement (/home/sohansagar/.nvm/versions/node/v14.17.3/lib/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)
+20220328T215203123
+20220328T215203134
+20220328T215203146
+20220328T215203157
+20220328T215203168
+<appium.webdriver.webelement.WebElement (session="37e87319-9f29-47dd-b851-bbcc2b98803d", element="00000000-0000-0d90-ffff-ffff00008281")>
