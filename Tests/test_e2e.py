@@ -99,7 +99,7 @@ class TestOne(BaseClass):
             getDataCan["flow"] = "issuance"
             self.open_write_excel(TestOne.temp, getDataCan)
         Ticket_cancel = Cancel(self.driver)
-        status = Ticket_cancel.cancel_tic()
+        status = Ticket_cancel.cancel_tic(getDataCan["Receipt"])
         if status:
             getDataCan["flow"]="Cancelation"
             self.open_write_excel(TestOne.temp, getDataCan)

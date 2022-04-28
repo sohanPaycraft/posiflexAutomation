@@ -12,7 +12,7 @@ class Cancel:
     def __init__(self, driver):
         self.driver =  driver
 
-    def cancel_tic(self):
+    def cancel_tic(self,x):
         time.sleep(1)
         m = self.driver.find_element(AppiumBy.XPATH,"//androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[7]")
         m.click()
@@ -35,8 +35,15 @@ class Cancel:
         succesTxtissue=self.driver.find_element(AppiumBy.ID, "com.example.punemetrotom:id/txtSuccess")
         #assert "successfully" in succesTxtissue.text
 
-        rec_pr =self.driver.find_element(AppiumBy.ID ,"com.example.punemetrotom:id/button_print")
-        rec_pr.click()
+        #rec_pr =self.driver.find_element(AppiumBy.ID ,"com.example.punemetrotom:id/button_print")
+        #rec_pr.click()
+        if x == 1:
+
+            print_rec = self.driver.find_element(AppiumBy.ID, "com.example.punemetrotom:id/button_print")
+        else:
+            print_rec = self.driver.find_element(AppiumBy.ID, "com.example.punemetrotom:id/button_skip")
+
+        print_rec.click()
         return True
         #selects= self.driver.find_elements(AppiumBy.ID ,"com.example.punemetrotom:id/btn_cancel")
 

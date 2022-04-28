@@ -93,7 +93,12 @@ class Analysis:
         # assert succesTxtissue.text == "Payment received and QR ticket issued successfully!"
         #assert "successfully" in succesTxtissue.text
 
-        print_rec = self.driver.find_element(AppiumBy.ID, "com.example.punemetrotom:id/button_print")
+        if getData["Receipt"] == 1:
+
+            print_rec = self.driver.find_element(AppiumBy.ID, "com.example.punemetrotom:id/button_print")
+        else:
+            print_rec = self.driver.find_element(AppiumBy.ID, "com.example.punemetrotom:id/button_skip")
+
         print_rec.click()
         time.sleep(1)
         return True

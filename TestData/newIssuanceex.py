@@ -19,6 +19,7 @@ class IssuanceEXData:
         e=[]
         f=[]
         g=[]
+        h=[]
         col_len=0
         t=0
         for x,y in df_d.items():
@@ -40,9 +41,13 @@ class IssuanceEXData:
                 elif t<col_len*4:
                     f.append(n)
                     t = t + 1
-                else:
+                elif t<col_len*5:
                     g.append(n)
                     t = t + 1
+                else:
+                    h.append(n)
+                    t = t + 1
+
 
         print(b,c,d,e)
 
@@ -54,6 +59,7 @@ class IssuanceEXData:
             a[b[2]]= e[n]
             a[b[3]]= f[n]
             a[b[4]]= g[n]
+            a[b[5]]= h[n]
             a["flow"]=re
             a["Amt"]=""
             data_take.append(a)

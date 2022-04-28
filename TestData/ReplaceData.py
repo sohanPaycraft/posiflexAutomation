@@ -17,6 +17,7 @@ class Replace_Data:
         c=[]
         d=[]
         e=[]
+        f=[]
         col_len=0
         t=0
         for x,y in df_d.items():
@@ -32,9 +33,12 @@ class Replace_Data:
                 elif t< col_len*2:
                     d.append(n)
                     t = t + 1
-                else:
+                elif t< col_len*3:
                     e.append(n)
                     t = t + 1
+                else:
+                    f.append(n)
+                    t=t+1
 
         print(b,c,d,e)
 
@@ -44,6 +48,7 @@ class Replace_Data:
             a[b[0]] = c[n]
             a[b[1]] = d[n]
             a[b[2]]= e[n]
+            a[b[3]]=f[n]
             a["flow"]=re
             a["Amt"]=""
             data_take.append(a)

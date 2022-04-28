@@ -55,7 +55,11 @@ class Refund:
         refund_confirm=self.driver.find_element(AppiumBy.ID, "com.example.punemetrotom:id/btnRefund")
         refund_confirm.click()
         wait.until(EC.presence_of_element_located((AppiumBy.ID, "com.example.punemetrotom:id/txtSuccess")))
-        print_rec = self.driver.find_element(AppiumBy.ID, "com.example.punemetrotom:id/button_print")
+        if getData["Receipt"] == 1:
+
+            print_rec = self.driver.find_element(AppiumBy.ID, "com.example.punemetrotom:id/button_print")
+        else:
+            print_rec = self.driver.find_element(AppiumBy.ID, "com.example.punemetrotom:id/button_skip")
         print_rec.click()
         time.sleep(1)
         return True
